@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-dev": "SET NODE_ENV=development&& nodemon --ignore ./src/client/ --ignore  api/ ./src/server.js --exec babel-node",
-    "build-prod-lnx": "export NODE_ENV=production&& webpack --mode=production --config webpack.config.prod.babel.js && babel-node server.js"
+    "build-prod-lnx": "export NODE_ENV=production&& webpack --mode=production --config webpack.config.prod.babel.js && babel-node ./src/server.js"
   },
   "repository": {
     "type": "git",
