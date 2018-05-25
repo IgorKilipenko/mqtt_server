@@ -3,6 +3,7 @@ import common from './webpack.config.common.babel';
 import path from 'path';
 import webpack from 'webpack';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
+import app_config from './app.config';
 
 const config = merge(common, {
     mode: 'production',

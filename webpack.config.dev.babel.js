@@ -2,6 +2,7 @@ import merge from 'webpack-merge';
 import common from './webpack.config.common.babel';
 import path from 'path';
 import webpack from 'webpack';
+import app_config from './app.config';
 
 const config = merge(common, {
     mode: 'development',
