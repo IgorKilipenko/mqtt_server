@@ -43,15 +43,15 @@ app.all('*', (req, res) => {
 app.listen(PORT, () => {
     console.log('Listening on port ' + PORT + '...');
     
-    broker.start(() => { });
-    let iter = 0;
-    mqtt_client.connect(() => {
-        setInterval(() => {
-            mqtt_client.publish(`Сообщение ноиер : ${iter++}`);
-        }, 5000);
-    });
-    mqtt_client.subscribe();
-    mqtt_client.haseMessage((topic, msg) => {
-        console.log(msg.toString());
-    })
+   broker.start(() => { });
+   // let iter = 0;
+   // mqtt_client.connect(() => {
+   //     setInterval(() => {
+   //         mqtt_client.publish(`Сообщение ноиер : ${iter++}`);
+   //     }, 5000);
+   // });
+   // mqtt_client.subscribe();
+   // mqtt_client.haseMessage((topic, msg) => {
+   //     console.log(msg.toString());
+   // })
 });
