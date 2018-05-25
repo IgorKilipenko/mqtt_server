@@ -5,7 +5,7 @@ import broker from './broker';
 import mqtt_client from './mqtt_client';
 
 const PORT = app_config.port;
-const PUBLIC_PATH = __dirname + `/${app_config.dist}`;
+const PUBLIC_PATH = path.resolve(__dirname, '../${app_config.dist}') //__dirname + `../${app_config.dist}`;
 
 const app = express();
 const isDevelopment = process.env.NODE_ENV === 'development';
