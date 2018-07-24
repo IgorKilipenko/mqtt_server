@@ -10,14 +10,15 @@ const config = merge(common, {
         'webpack-hot-middleware/client?reload=true',
         'react-hot-loader/patch'
     ],
-    devtool: 'inline-source-map',
-    //devtool: '#source-map',
+    //devtool: 'inline-source-map',
+    devtool: '#source-map',
     output: {
         pathinfo: true,
         filename: 'bundle.js'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
+        new webpack.NamedModulesPlugin(),
     ]
 });
 

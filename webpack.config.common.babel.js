@@ -41,7 +41,7 @@ export default  {
     plugins: [
         new HtmlWebpackPlugin({
             template: `./${app_config.src}/client/index.html`,
-            //filename: 'index.html',
+            filename: 'index.html',
             inject: 'body'
         }),
         

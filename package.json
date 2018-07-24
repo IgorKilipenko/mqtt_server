@@ -20,7 +20,13 @@
   "homepage": "https://github.com/IgorKilipenko/mqtt_server#readme",
   "dependencies": {
     "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
+    "classnames": "^2.2.5",
     "express": "^4.16.3",
+    "firebase": "^5.0.4",
+    "firebase-admin": "^5.12.1",
+    "mobx": "^4.3.0",
+    "mobx-react": "^5.1.2",
     "mosca": "^2.8.1",
     "mqtt": "^2.18.0",
     "react": "^16.3.2",
